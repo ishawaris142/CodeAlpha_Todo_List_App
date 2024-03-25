@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List Web Application</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Unicons CSS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header" style="text-align: center;">
+      <h1 class="header-title">Todo List App</h1>
+    </header>
+    <div class="input-field">
+      <textarea placeholder="Enter your new task"></textarea>
+      <i class="uil uil-notes note-icon"></i>
+    </div>
+    <ul class="todoLists">
+      <li class="list pending">
+        <input type="checkbox" />
+        <div class="task-info">
+          <!-- Within the list item -->
+          <div class="icons">
+            <i class="uil uil-trash" onclick="deleteTask(this)" style="margin-right: 20px;"></i>
+            <i class="uil uil-edit" onclick="editTask(this)" style="margin-left: 5px;"></i>
+          </div>
+          <span class="task"></span>
+
+      </li>
+    </ul>
+    <div class="pending-tasks">
+      <span>You have <span class="pending-num"> no </span> tasks pending.</span>
+      <button class="clear-button">Clear All</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
